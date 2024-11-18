@@ -1,4 +1,4 @@
-package com.example.teoriapmdm.Vistas;
+package com.example.teoriapmdm.Controladores;
 
 import android.os.Bundle;
 
