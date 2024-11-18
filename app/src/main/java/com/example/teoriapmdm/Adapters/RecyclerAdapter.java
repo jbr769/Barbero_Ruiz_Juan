@@ -20,8 +20,9 @@ import java.util.List;
     @NonNull
     @Override
     public RecyclerAdapter.RecyclerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler,parent,)
-        return null;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler,parent, false);
+        RecyclerHolder recyclerHolder = new RecyclerHolder(view);
+        return recyclerHolder;
     }
 
     @Override
