@@ -32,12 +32,12 @@ public class Lista extends AppCompatActivity {
     }
     public List<Jugadores> getListJugadores(){
         ArrayList<Jugadores> list = new ArrayList<Jugadores>();
-        /*list.add(new Jugadores("Cristiano Ronaldo","Una vez se cansó de ser el mejor en juego de tronos, cogió un tridente y de fue a nadar con los peces",R.drawable.cr7));
+        list.add(new Jugadores("Cristiano Ronaldo","Una vez se cansó de ser el mejor en juego de tronos, cogió un tridente y de fue a nadar con los peces",R.drawable.cr7));
         list.add(new Jugadores("Messi","Un hombre disfrazado de murciélago se pelea con un hombre con la ropa interior roja por fuera",R.drawable.messi));
         list.add(new Jugadores("Bencema","Un hombre disfrazado, el de juego de tronos, un robot, una mujer con una cuerda y el hombre de la ropa interior se pelean con un bicho",R.drawable.bencema));
         list.add(new Jugadores("Modric","¿Y si la ropa interior la hubiera comprado en Rusia?",R.drawable.modric));
         list.add(new Jugadores("Zidane","Una mujer superfuerte con un lazo, no quiere que nadie sepa que es superfuerte y que tiene un lazo",R.drawable.zidane));
         list.add(new Jugadores("Kaka","Un hombre rubio superfuerte se pelea con su hermano y se encuentra con una de las gemas del...oh wait!! que alguien despida al becario!!",R.drawable.kaka));
-        */return list;
+        return list;
     }
 }
