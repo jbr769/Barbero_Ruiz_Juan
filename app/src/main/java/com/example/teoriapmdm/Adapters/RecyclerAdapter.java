@@ -29,12 +29,15 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerAdapter.RecyclerHolder holder, int position) {
-
+    Jugadores jugador = listJugadores.get(position);
+    holder.txtViewDesc.setText(jugador.getDescripcion());
+    holder.txtViewTitle.setText(jugador.getNombre());
+    holder.imgJugador.setImageResource(jugador.getImageId());
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return listJugadores.size();
     }
 
     public class RecyclerHolder extends RecyclerView.ViewHolder {
@@ -45,9 +48,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
         public RecyclerHolder(@NonNull View itemView) {
             super(itemView);
 
-            /*imgJugador  = (ImageView) itemView.findViewById(R.id.img_item);
-            txtViewTitle = (TextView)  itemView.findViewById(R.id.txt_item_tittle);
-            txtViewDesc  = (TextView)  itemView.findViewById(R.id.txt_item_desc);*/
+            imgJugador  = (ImageView) itemView.findViewById(R.id.img_re);
+            txtViewTitle = (TextView)  itemView.findViewById(R.id.txtTitle);
+            txtViewDesc  = (TextView)  itemView.findViewById(R.id.txtdes);
 
 
         }
