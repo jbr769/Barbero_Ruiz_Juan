@@ -1,8 +1,10 @@
-package com.example.teoriapmdm;
+package com.example.teoriapmdm.Vistas;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.teoriapmdm.R;
 
 public class Lista extends AppCompatActivity {
 
@@ -10,6 +12,8 @@ public class Lista extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista);
+
+
     }
 
 }

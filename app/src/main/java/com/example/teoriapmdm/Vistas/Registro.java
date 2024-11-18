@@ -1,4 +1,4 @@
-package com.example.teoriapmdm;
+package com.example.teoriapmdm.Vistas;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.teoriapmdm.R;
 
 public class Registro extends AppCompatActivity {
 
@@ -64,9 +66,9 @@ public class Registro extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     if (nombre.getText().toString().equalsIgnoreCase("NOMBRE") || email.getText().toString().equalsIgnoreCase("EMAIL") || edad.getText().toString().equalsIgnoreCase("EDAD")){
-                        Toast.makeText(com.example.teoriapmdm.Registro.this, "Debe rellenar todos los campos", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Registro.this, "Debe rellenar todos los campos", Toast.LENGTH_LONG).show();
                     }else if (Integer.parseInt(edad.getText().toString()) < 18){
-                        Toast.makeText(com.example.teoriapmdm.Registro.this, "Debe ser mayor de edad para registrarse", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Registro.this, "Debe ser mayor de edad para registrarse", Toast.LENGTH_LONG).show();
                     }else{
                         AlertDialog registro = crearAlert();
                         registro.show();
@@ -76,7 +78,7 @@ public class Registro extends AppCompatActivity {
         }
 
         private AlertDialog crearAlert() {
-            AlertDialog.Builder builder = new AlertDialog.Builder(com.example.teoriapmdm.Registro.this);
+            AlertDialog.Builder builder = new AlertDialog.Builder(Registro.this);
             builder.setMessage("Registro correcto");
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @Override

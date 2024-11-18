@@ -13,7 +13,7 @@
         android:theme="@style/Theme.TeoriaPMDM"
         tools:targetApi="31" >
         <activity
-            android:name=".MainActivity"
+            android:name=".Vistas.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,10 +22,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Lista"
+            android:name=".Vistas.Lista"
             android:exported="true" />
         <activity
-            android:name=".Registro"
+            android:name=".Vistas.Registro"
             android:exported="true"/>
     </application>
 
