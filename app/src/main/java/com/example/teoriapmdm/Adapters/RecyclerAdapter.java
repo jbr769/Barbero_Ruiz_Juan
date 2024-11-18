@@ -47,12 +47,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
         public RecyclerHolder(@NonNull View itemView) {
             super(itemView);
-
             imgJugador  = (ImageView) itemView.findViewById(R.id.img_re);
             txtViewTitle = (TextView)  itemView.findViewById(R.id.txtTitle);
             txtViewDesc  = (TextView)  itemView.findViewById(R.id.txtdes);
-
-
         }
     }
 }
