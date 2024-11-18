@@ -9,16 +9,17 @@ import com.example.teoriapmdm.Modelos.Jugadores;
 
 import java.util.List;
 
-/*public class Adapter extends RecyclerView.Adapter<RecyclerView.RecyclerMolder> {
+/*public class Adapter extends RecyclerView.Adapter<Adapter.RecyclerHolder>{
     List<Jugadores> listJugadores;
+
     @NonNull
     @Override
-    public RecyclerView.RecyclerMolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public Adapter.RecyclerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return null;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.RecyclerMolder holder, int position) {
+    public void onBindViewHolder(@NonNull Adapter.RecyclerHolder holder, int position) {
 
     }
 
