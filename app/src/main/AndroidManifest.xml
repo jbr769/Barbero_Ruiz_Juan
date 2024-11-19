@@ -27,6 +27,12 @@
         <activity
             android:name=".Controladores.Registro"
             android:exported="true"/>
+        <activity
+            android:name=".Controladores.Detalle"
+            android:exported="true"/>
+        <activity
+            android:name=".Adapters.RecyclerAdapter"
+            android:exported="true"/>
     </application>
 
 </manifest>
