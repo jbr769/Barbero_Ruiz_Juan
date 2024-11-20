@@ -24,7 +24,7 @@ public class Lista extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista);
-        recView = (RecyclerView) findViewById(R.id.reciclerView);
+        recView = (RecyclerView) findViewById(R.id.recyclerView);
         recAdapter = new RecyclerAdapter(getListJugadores());
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recView.setAdapter(recAdapter);

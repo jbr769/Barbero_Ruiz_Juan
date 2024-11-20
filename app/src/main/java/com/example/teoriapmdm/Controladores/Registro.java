@@ -2,6 +2,7 @@ package com.example.teoriapmdm.Controladores;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -88,4 +89,10 @@ public class Registro extends AppCompatActivity {
             });
             return builder.create();
         }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
 }
