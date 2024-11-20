@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Estrellas" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+</resources>

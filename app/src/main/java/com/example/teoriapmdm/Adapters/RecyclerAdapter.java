@@ -25,6 +25,11 @@ import java.util.List;
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecyclerHolder> {
     List<Jugadores> listJugadores;
 
+    public interface ToolbarChangeListener {
+        void onEnterActionMode();
+        void onExitActionMode();
+    }
+
     public RecyclerAdapter(List<Jugadores> listJugadores){ this.listJugadores = listJugadores; }
 
     @NonNull
