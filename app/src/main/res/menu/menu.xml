@@ -3,16 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android" >
     <item
         android:id="@+id/item_delete"
-        android:icon="@drawable/delete"
+        android:icon="@drawable/borrar"
         android:orderInCategory="1"
         android:title="Borrar"
-        app:showAsAction="ifRoom"
-        />
-    <item
-        android:id="@+id/item_cancelar"
-        android:icon="@drawable/cancelar"
-        android:orderInCategory="2"
-        android:title="Cancelar"
+        android:iconTint="@color/white"
         app:showAsAction="ifRoom"
         />
 </menu>

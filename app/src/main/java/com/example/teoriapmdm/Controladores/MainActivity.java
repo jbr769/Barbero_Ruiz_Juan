@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btn_Registro;
     Button btn_Lista;
+    ImageView imagen;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -23,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
         btn_Registro = (Button) findViewById(R.id.btnRegistro);
         btn_Lista = (Button) findViewById(R.id.btnLista);
+        imagen = (ImageView) findViewById(R.id.imageMain);
+
+        imagen.setImageResource(R.drawable.balon);
 
         btn_Registro.setOnClickListener(new View.OnClickListener() {
             @Override
